@@ -1,0 +1,101 @@
+{
+  "policies": {
+    "CaptivePortal": false,
+    "DisableFirefoxStudies": true,
+    "DisableTelemetry": true,
+    "DisplayBookmarksToolbar": "always",
+    "DNSOverHTTPS": {
+      "Enabled": false
+    },
+        
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Locked": true,
+      "Cryptomining": true,
+      "Fingerprinting": true,
+      "EmailTracking": true,
+      "SuspectedFingerprinting": true,
+      "Category": "strict",
+      "BaselineExceptions": false,
+      "ConvenienceExceptions": false
+    },
+
+    "FirefoxHome": {
+      "Search": true,
+      "TopSites": true,
+      "SponsoredTopSites": false,
+      "Highlights": false,
+      "Pocket": false,
+      "SponsoredPocket": false,
+      "Snippets": false,
+      "Weather": false,
+      "Locked": false
+    }, 
+
+    "Homepage": {
+      "URL": "file:///usr/share/kali-defaults/web/homepage.html",
+      "Locked": false,
+      "StartPage": "homepage"
+    },
+
+    "ManagedBookmarks": [
+      { "toplevel_name": "OSINT" },
+      { "name": "SpiderFoot (local)", "url": "http://127.0.0.1:5001" },
+      { "name": "Shodan", "url": "https://www.shodan.io/" },
+      { "name": "Censys", "url": "https://search.censys.io/" },
+      { "name": "crt.sh (CT)", "url": "https://crt.sh/" },
+      { "name": "urlscan.io", "url": "https://urlscan.io/" },
+      { "name": "VirusTotal", "url": "https://www.virustotal.com/gui/home/search" },
+      { "name": "Wayback Machine", "url": "https://web.archive.org/" },
+      { "name": "HaveIBeenPwned", "url": "https://haveibeenpwned.com/" },
+      { "name": "BuiltWith", "url": "https://builtwith.com/" },
+      { "name": "WHOIS", "url": "https://who.is/" },
+      { "name": "GreyNoise Viz", "url": "https://viz.greynoise.io/" },
+      { "name": "OSINT Framework", "url": "https://osintframework.com/" }
+    ],
+
+    "NetworkPrediction": false,
+    "NoDefaultBookmarks": true,
+
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "",
+  
+    "Permissions": {
+      "Camera": {
+        "Default": "block"
+      },
+      "Microphone": {
+        "Default": "block"
+      },
+      "Location": {
+        "Default": "block"
+      }
+    },
+     
+    "Preferences": {
+      "browser.contentblocking.category": { "Value": "strict", "Status": "locked" },
+      "privacy.trackingprotection.enabled": { "Value": true, "Status": "locked" },
+      "privacy.trackingprotection.socialtracking.enabled": { "Value": true, "Status": "locked" },
+      "privacy.resistFingerprinting": { "Value": true, "Status": "locked" },
+      "toolkit.telemetry.enabled": { "Value": false, "Status": "locked" },
+      "toolkit.telemetry.unified": { "Value": false, "Status": "locked" },
+      "datareporting.healthreport.uploadEnabled": { "Value": false, "Status": "locked" },
+      "app.shield.optoutstudies.enabled": { "Value": false, "Status": "locked" },
+      "permissions.default.geo": { "Value": 2, "Status": "locked" },
+      "permissions.default.microphone": { "Value": 2, "Status": "locked" },
+      "permissions.default.camera": { "Value": 2, "Status": "locked" },
+      "geo.enabled": { "Value": false, "Status": "locked" },
+      "media.navigator.enabled": { "Value": false, "Status": "locked" }
+    },
+
+    "SanitizeOnShutdown": {
+      "Cache": true,
+      "Cookies": true,
+      "FormData": true,
+      "History": true,
+      "Sessions": true,
+      "SiteSettings": false,
+      "Locked": true
+    }
+  }
+}
